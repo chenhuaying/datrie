@@ -119,5 +119,6 @@ public class CharacterNaturalMapping implements NaturalMapping<Character> {
 		assert trie.containsPrefix(list2) == SearchResult.PURE_PREFIX;
 		list1.set(list1.size() - 1, 90);
 		assert trie.containsPrefix(list1) == SearchResult.NOT_FOUND;
+		System.out.println("alphabet size: " + trie.getAlphabetSize());	
 	}
 }
